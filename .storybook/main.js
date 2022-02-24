@@ -10,7 +10,8 @@ module.exports = {
       preprocessorOptions: {
         scss: {
           additionalData: `
-            @import './tokens/build/_variables.scss';
+          @import './tokens/build/_variables.scss';
+          @import './src/assets/styles/styles.scss';
           `,
         },
       },

@@ -6,6 +6,7 @@
 
 <style lang="scss" scoped>
 h1 {
-  color: $color-base-red;
+  color: $color-success-darkest;
+  font-size: $font-size-xl;
 }
 </style>
