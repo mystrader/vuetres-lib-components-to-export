@@ -1,7 +1,11 @@
 <template>
-  <h2>Este é o componente nav</h2>
+  <h1>Testando</h1>
 </template>
 
-<script setup>
-import { ref } from "vue";
-</script>
+<script></script>
+
+<style lang="scss" scoped>
+h1 {
+  color: $color-base-red;
+}
+</style>
