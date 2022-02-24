@@ -10,7 +10,8 @@
     "build-storybook": "build-storybook",
     "tokens": "style-dictionary build -c tokens/config.json && copyfiles -f tokens/build/_variables.scss dist/tokens",
     "tokens-simple": "style-dictionary build -c tokens/config.json",
-    "lib:build": "copyfiles -f tokens/build/_variables.scss dist/tokens && copyfiles -f src/assets/styles/* dist/styles && cross-env NODE_ENV=production rollup --config build/rollup.config.js"
+    "lib:build": "copyfiles -f tokens/build/_variables.scss dist/tokens && copyfiles -f src/assets/styles/* dist/styles && cross-env NODE_ENV=production rollup --config build/rollup.config.js",
+    "lib:publish": "lerna publish --force-publish * --yes"
   },
   "dependencies": {
     "vue": "^3.2.25"
@@ -25,6 +26,7 @@
     "babel-loader": "^8.2.3",
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
+    "lerna": "^4.0.0",
     "postcss": "^8.4.6",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-terser": "^7.0.2",
