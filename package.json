@@ -10,6 +10,7 @@
     "build-storybook": "build-storybook",
     "tokens": "style-dictionary build -c tokens/config.json && copyfiles -f tokens/build/_variables.scss dist/tokens",
     "tokens-simple": "style-dictionary build -c tokens/config.json",
+    "tokens-json-export": "style-dictionary build --config ./sd.config.js",
     "lib:build": "copyfiles -f tokens/build/_variables.scss dist/tokens && copyfiles -f src/assets/styles/* dist/styles && cross-env NODE_ENV=production rollup --config build/rollup.config.js",
     "lib:publish": "lerna publish --force-publish * --yes"
   },
