@@ -1,7 +1,7 @@
 import Button from "./Button.vue";
 
 export default {
-  title: "Components/Button",
+  title: "Components/Button", 
   component: { Button },
   argTypes: {
     label: {
